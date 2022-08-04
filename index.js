@@ -1,9 +1,9 @@
 var seconds = 5; // seconds for HTML
 var foo;
-var path = 'https://reload-dev.ml';
+var url = 'https://reload-dev.ml';
 
 function redirect() {
-    document.location.href = path;
+    document.location.href = url;
 }
 
 function updateSecs() {
