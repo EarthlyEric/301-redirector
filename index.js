@@ -1,14 +1,14 @@
-	// Countdown timer for redirecting to another URL after several seconds by e4s-cdn
-
 var seconds = 5; // seconds for HTML
-var foo; // variable for clearInterval() function
+var foo;
+var path = 'https://reload-dev.ml';
 
 function redirect() {
-    document.location.href = 'https://home.error404studios.ml/';
+    document.location.href = path;
 }
 
 function updateSecs() {
     document.getElementById("seconds").innerHTML = seconds;
+    document.getElementById("title").innerHTML = seconds
     seconds--;
     if (seconds == -1) {
         clearInterval(foo);
@@ -21,6 +21,5 @@ function countdownTimer() {
         updateSecs()
     }, 1000);
 }
-
-countdownTimer();// JavaScript Document
+countdownTimer();
 	 
